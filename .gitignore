@@ -1,0 +1,40 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dotnet tools
+.tools/
+
+# Entity Framework Migrations (optional, ak nechceš trackovať snapshoty)
+# Migrations/
+
+# Secrets
+appsettings.Development.json
+secrets.json
+
+# Git
+.git/
+
+# Others
+*.swp
+wwwroot/lib/
+node_modules/
