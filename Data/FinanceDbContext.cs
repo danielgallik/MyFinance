@@ -12,5 +12,6 @@ namespace MyFinance.Data
 
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Party> Parties { get; set; }
     }
 }
