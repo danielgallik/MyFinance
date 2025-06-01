@@ -1,0 +1,14 @@
+{
+  "name": "MyFinance",
+  "version": "1.0.0",
+  "slug": "myfinance",
+  "description": "Finance overview for Home Assistant",
+  "startup": "services",
+  "boot": "auto",
+  "image": "dandifac/myfinance:latest",
+  "ports": {
+    "5000/tcp": 5000
+  },
+  "webui": "http://[HOST]:[PORT:5000]",
+  "ingress": false
+}
