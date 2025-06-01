@@ -38,3 +38,8 @@ secrets.json
 *.swp
 wwwroot/lib/
 node_modules/
+
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal
