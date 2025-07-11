@@ -1,15 +1,17 @@
 name: MyFinance
-description: Finance overview for Home Assistant
-version: 1.0.0
+version: "1.0.0"
 slug: myfinance
-init: false
+description: Finance overview for Home Assistant
 arch:
   - aarch64
   - amd64
   - armhf
   - armv7
   - i386
+init: false
+image: "ghcr.io/danielgallik/myfinance"
 startup: services
+boot: manual
+ingress: true
 ports:
   5000/tcp: 5000
-image: ghcr.io/dandifac/myfinance:latest
