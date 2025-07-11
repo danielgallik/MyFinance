@@ -11,7 +11,7 @@ COPY . ./
 RUN dotnet publish -c Release --no-restore -o /app/publish
 
 # Runtime stage
-FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /app/publish .
 EXPOSE 5000
