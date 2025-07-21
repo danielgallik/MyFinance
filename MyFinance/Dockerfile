@@ -17,11 +17,3 @@ COPY --from=build /app/publish .
 EXPOSE 5000
 ENV ASPNETCORE_URLS=http://+:5000
 ENTRYPOINT ["dotnet", "MyFinance.dll"]
-
-ARG BUILD_VERSION
-ARG BUILD_ARCH
-
-LABEL \
-  io.hass.version=${BUILD_VERSION} \
-  io.hass.type="addon" \
-  io.hass.arch="${BUILD_ARCH}"
